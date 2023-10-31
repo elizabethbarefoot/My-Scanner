@@ -6,6 +6,17 @@ public class MyScanner
 
     public void run() {
         Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNext() != true) {
+            if (scanner.hasNextInt()) {
+                System.out.println(scanner.nextInt() * 3);
+            }
+        }
+        while (!scanner.hasNext()) {
+            if (scanner.hasNextInt()) {
+                System.out.println(scanner.nextInt());
+            }
+        }
+        scanner.useDelimiter(",");
         while (true) {
             if (scanner.hasNext()) {
                 String str = scanner.next();
