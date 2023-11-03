@@ -16,7 +16,7 @@ public class MyScanner
                 System.out.println(scanner.nextInt());
             }
         }
-        scanner.useDelimiter(",");
+        scanner.useDelimiter(",|\\n");
         while (true) {
             if (scanner.hasNext()) {
                 String str = scanner.next();
